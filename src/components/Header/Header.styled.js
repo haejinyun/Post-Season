@@ -7,18 +7,22 @@ export const Container = styled.div`
   max-width: 1320px;
   height: 124px;
   margin: 0 auto;
-  padding: 0 60px 30px;
+  padding: 0 0 30px;
 
   border-bottom: 1px solid rgb(195 212 233 / 40%);
 `
-
+export const HomeLink = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+`
 export const Logo = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 `
 
 export const Title = styled.div`
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 900;
   color: rgb(53 99 233 / 100%);
   text-align: left;

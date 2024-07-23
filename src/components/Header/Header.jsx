@@ -7,10 +7,6 @@ import useBooleanState from '../../hooks/utils/useBooleanState'
 import ball from '../../assets/png/ball.png'
 import Dropdown from './components/Dropdown'
 
-// import YellowDotIcon from '@/assets/svg/dots/yellowDot.svg?react'
-
-// '../../assets/svg/chevron-up.svg?react'
-
 function Header() {
   const { value: isDropdownView, toggle, setFalse } = useBooleanState()
 
@@ -22,8 +18,10 @@ function Header() {
 
   return (
     <S.Container>
-      <S.Logo src={ball} alt="err" />
-      <S.Title>Post Season</S.Title>
+      <S.HomeLink href="/">
+        <S.Logo src={ball} alt="err" />
+        <S.Title>Post Season</S.Title>
+      </S.HomeLink>
       <S.TriggerSection className="container" onBlur={handleBlurContainer}>
         <S.Trigger onClick={toggle} type="button">
           프로 야구 {isDropdownView ? <ChevronUPIcon /> : <ChevronDownIcon />}

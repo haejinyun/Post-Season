@@ -1,5 +1,4 @@
 import * as S from './MainPage.styled'
-
 import ClubSection from './components/ClubSection'
 import MainCarouselSection from './components/MainCarouselSection'
 
