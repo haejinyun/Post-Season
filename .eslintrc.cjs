@@ -9,7 +9,7 @@ module.exports = {
     'import/resolver': {
       node: {
         paths: ['src'],
-        extensions: ['.js', '.jsx'],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"] 
       },
     },
   },
@@ -18,8 +18,10 @@ module.exports = {
     'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
       'warn',
-      { allowConstantExport: true },
+      { allowConstantExport: true,endOfLine: 'auto' },
     ],
+    'no-restricted-exports': 'off',
+    "import/no-unresolved": "off",
     'react/react-in-jsx-scope': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
